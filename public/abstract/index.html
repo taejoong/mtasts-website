@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="generator" content="Hugo 0.89.4"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MTA-STS Study</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="/static/css/noscript.css">
+    </noscript>
+</head>
+
+<body class="container">
+<nav class="container-fluid navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+        </button>
+        <a class="navbar-brand" href="/">MTA-STS Study</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/abstract/">Abstract</a></li>
+            <li><a href="/dataset/">Dataset</a></li>
+            <li><a href="/survey/">Survey</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    var sc_project = 11603023;
+    var sc_invisible = 1;
+    var sc_security = "a906280a";
+    var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    document.write("<script type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+    <div class="statcounter"><a title="Web Analytics"
+                                href="http://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="//c.statcounter.com/11603023/0/a906280a/1/" alt="Web Analytics"></a>
+    </div>
+</noscript>
+<script src="/static/js/jquery.1.12.4.min.js"></script>
+<script src="/static/js/script.js"></script>
+<noscript>
+    <div class="alert alert-warning" role="alert">
+        <strong>JavaScript disabled!</strong> This page requires JavaScript, you might not be able to access all content
+        with JavaScript disabled.
+    </div>
+</noscript>
+
+<main class="container-fluid">
+    <script>
+        var clicky_site_ids = clicky_site_ids || [];
+        clicky_site_ids.push(101238267);
+    </script>
+    <script async src="/static/js/jquery.1.12.4.min.js"></script>
+    <p>
+        <noscript>
+                <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101238267ns.gif"/></p>
+        </noscript>
+    </p>
+    <div class="jumbotron">
+        <div class="container">
+            <h3 align='right'><i>ACM Internet Measurement Conference 2025</i></h3>
+            <h2 align='right'><a href="https://taejoong.github.io/files/publications/ashiq-2025-mtasts.pdf" target="_blank">Unraveling the Complexities of MTA-STS Deployment and Management in Securing Email</a></h2>
+            <h3 align='right'>
+                <a href="https://ashiq5.github.io/">Md. Ishtiaq Ashiq<sup>†</sup></a>,
+                <a href="https://homepage.tudelft.nl/2x09j/">Tobias Fiebig<sup>‡</sup></a>,<br>
+                <a href="https://taejoong.github.io">Taejoong "Tijay" Chung<sup>†</sup></a>,
+            </h3>
+            <h5 align='right'>
+                <sup>†</sup>Virginia Tech,
+                <sup>‡</sup>Max-Planck-Institut für Informatik,
+            </h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 id="about-this-study">About This Study</h1>
+        <p>Email has been a cornerstone of online communication for decades, but its lack of built-in confidentiality has left it vulnerable to various attacks. To address this issue, two key protocols are being used: MTA-STS (Mail Transfer Agent Strict Transport Security) and DANE (DNS-based Authentication of Named Entities). While DANE was introduced first, MTA-STS has been actively adopted by major email providers like Google and Microsoft, as it does not require the complex DNSSEC chain that poses a significant challenge in deploying and managing DANE. However, despite its significance, there has been limited research on how MTA-STS is deployed and managed in practice. In this study, we present a thorough, longitudinal investigation of the MTA-STS ecosystem. We base our analysis on a dataset capturing over 87 million domains from DNS scans collected across four TLDs over 31 months, along with 10 months of additional component scanning such as TLS certificates, thereby offering a broad perspective on MTA-STS adoption and its management.</p>
+        <p>Our analysis uncovers a concerning trend of misconfigurations and inconsistencies in MTA-STS setups. In our most recent snapshot, out of 68K domains with MTA-STS record, 29.6% of domains were incorrectly configured, while 3.2% of these should encounter email delivery failure from MTA-STS supporting senders. To gain insights into the challenges faced by email administrators, we surveyed 117 operators. While awareness of MTA-STS was high (94.7%), many cited operational complexity (48.8%) and a preference for DANE (45.4%) as reasons for not deploying the protocol. Our study not only highlights the growing importance of MTASTS but also reveals the significant challenges in its deployment and management.</p>
+    </div>
+</main>
+<footer class="container-fluid page-footer" style="display: flex; align-items: center">
+</footer>
+</body>
+</html>
