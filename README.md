@@ -1,12 +1,19 @@
-# Virtual Environment Setup
-1. python3 -m venv .venv
-2. source .venv/bin/activate
+# MTA-STS Study static site
 
-# Requirement Installation
-1. pip install -r requirements.txt
+This repository now contains a fully static version of the MTA-STS Study website. All pages are plain HTML files in the project root that reference assets located in the `static/` directory. This layout can be uploaded directly to any static host, including Cloudflare Workers/Pages.
 
-# Docker Container Start
-1. docker-compose build
-2. docker-compose up
+## Preview locally
 
-# A nginx service should be configured to reverse proxy to http://127.0.0.1:5001
+Any static file server will work. For example:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then open <http://localhost:8080> in your browser.
+
+## Deploying to Cloudflare Workers/Pages
+
+1. Upload the repository contents (including the `static/` directory) to your Worker or Pages project.
+2. Ensure the entry point is `index.html` and that all static assets remain in the `static/` folder.
+3. Publish the site; the HTML files already contain absolute links such as `/dataset.html` and `/static/...`, which are compatible with static hosting environments.
