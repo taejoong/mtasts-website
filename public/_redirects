@@ -1,8 +1,4 @@
-/abstract /abstract.html 200
-/abstract/ /abstract.html 200
-/contact /contact.html 200
-/contact/ /contact.html 200
-/dataset /dataset.html 200
-/dataset/ /dataset.html 200
-/survey /survey.html 200
-/survey/ /survey.html 200
+/abstract /abstract/index.html 200
+/contact /contact/index.html 200
+/dataset /dataset/index.html 200
+/survey /survey/index.html 200
