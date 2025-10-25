@@ -1,0 +1,10 @@
+name = "mtasts-static-site"
+main = "worker.js"
+compatibility_date = "2024-01-30"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "none"
+
