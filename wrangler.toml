@@ -1,4 +1,4 @@
-name = "mtasts-static-site"
+name = "mta-sts-artifact"
 main = "worker.js"
 compatibility_date = "2024-01-30"
 
